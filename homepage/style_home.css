@@ -1,0 +1,90 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  background: gray;
+}
+.warp {
+  width: 850px;
+  background: white;
+  margin: 0px auto 0px auto;
+}
+/* warp : 본문 안에 사용도니 영역을 묶어서 배경색, 여백 등을 지정 */
+header {
+  background-image: url("../homepage/image/background1.png");
+  width: 850px;
+  height: 80px;
+  text-align: center;
+  padding: 0.1px 0px 0px 0px;
+}
+@font-face {
+  font-family: "Cafe24Syongsyong";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.1/Cafe24Syongsyong.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+/* header(로고 및 메인 베너) : 헤더 부분의 배경색, 크기, 글자 정렬 등을 지정 */
+a {
+  text-decoration: none;
+  color: whitesmoke;
+  font-family: "Cafe24Syongsyong";
+  font-size: 2vmin;
+}
+/* a : 홈페이지 제목의 하이퍼링크의 밑줄을 없애고 검은색을 표현 */
+nav a:hover {
+  color: gray;
+  border-top: darkgray;
+}
+/* nav a:hover : 마우스를 올렸을 때 글자색을 지정 */
+nav {
+  width: 850px;
+  height: 45px;
+  background-image: url("../homepage/image/banner.png");
+  text-align: center;
+  color: black;
+  padding: 0.1px 0px 0px 0px;
+}
+/* nav(네비게이션 메뉴) : 내비게이션 영역을 크기, 배경색, 글자 정렬 등을 지정 */
+nav li {
+  display: inline;
+  padding: 5px;
+}
+nav a {
+  text-decoration: none;
+  color: black;
+  padding: 8px;
+  border-style: hidden hidden solid hidden;
+  border-color: transparent;
+  font-weight: bold;
+}
+/* nav a : 내비게이션 영역의 메뉴 글자들의 밑줄을 없애고 글자색 등을 지정 */
+nav a:hover {
+  color: gray;
+  border-color: darkgray;
+}
+article {
+  width: 700px;
+  background: white;
+  float: left;
+  padding: 10px;
+}
+/* article(본문) :  아티클 영역의 크기 배경색, 글자 정렬 등을 지정 */
+aside {
+  width: 850px;
+  height: 100%;
+  background: lightgray;
+  color: black;
+  float: right;
+}
+/* aside(메뉴) : 어사이드 영역의 크기, 배경색, 글자 정렬 등을 지정 / 옆의 sns 링크 */
+footer {
+  float: bottom;
+  width: 850px;
+  height: 50px;
+  padding: 20px 0px 0px 0px;
+  background: black;
+  color: white;
+  clear: both;
+  text-align: center;
+}
+/* footer(맨 아래부분) : 각주 영역의 크기, 배경색, 글자 정렬 등을 지정 */
