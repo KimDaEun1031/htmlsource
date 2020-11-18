@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 웹서버에 정보를 제출하기 위한 용도 -->
+    <title>form</title>
+</head>
+<body>
+    <form action="" method=""  >
+        <!-- action : 전송한 정보를 처리할 웹 페이지의 url
+            method : 서버로 전송할 http방식(get(기본-검색할 때 제일 많이 사용),post(다량의 정보를 보낼때))
+            name : 폼의 이름
+            novalidate : 데이터의 유효성을 검사하지 않음
+            autocomplete : 자동완성(on(기본),off) -->
+            <div>
+                <label for="username">이름</label>
+                <input type="text" id="username">
+            </div>
+            <div>
+                <label for="pw">비밀번호</label>
+                <input type="password" name="" id="pw">
+            </div>
+            <div>
+                <!-- 여러개의 선택지 중에서 한가지를 선택 -->
+                <label for="gender">성별</label>
+                <input type="radio" name="gender" id="gender">남성
+                <input type="radio" name="gender" id="gender">여성
+                <!-- 라디오에서 네임 속성을 없애면 둘 다 선택이 됨 네임 속성 무조건 필수 -->
+            </div>
+            <div>
+                <!-- 여러개의 선택지 중에서 여러가지를 선택 -->
+                <label for="">취미</label>
+                <input type="checkbox" name="hobby" id="">영화감상
+                <input type="checkbox" name="hobby" id="">독서
+                <input type="checkbox" name="hobby" id="">운동
+                <input type="checkbox" name="hobby" id="">잠자기
+                <input type="checkbox" name="hobby" id="">유튜브보기
+            </div>
+            <input type="button" value="보내기">
+    </form>
+</body>
+</html>
